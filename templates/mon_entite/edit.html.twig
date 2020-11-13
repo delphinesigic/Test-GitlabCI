@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit MonEntite{% endblock %}
+
+{% block body %}
+    <h1>Edit MonEntite</h1>
+
+    {{ include('mon_entite/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('mon_entite_index') }}">back to list</a>
+
+    {{ include('mon_entite/_delete_form.html.twig') }}
+{% endblock %}
